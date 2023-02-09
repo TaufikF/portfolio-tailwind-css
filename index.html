@@ -1,10 +1,13 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en" class="scroll-smooth" style="overflow-x: hidden;">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
 
@@ -19,14 +22,19 @@
         rel="stylesheet">
 
     <!-- Animatecss -->
-    <link rel="stylesheet" href="node_modules/animate.css/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- AOS css -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Portofolio</title>
+
 </head>
 
 <body>
 
     <!-- Header Start -->
-    <header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10">
+    <header
+        class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10 animate__animated animate__fadeInDown">
         <div class="container">
             <div class="flex items-center justify-between relative">
                 <div class="px-4">
@@ -78,7 +86,7 @@
     <section id="home" class="font-inter pt-36 lg:pt-20">
         <div class="container">
             <div class="flex flex-wrap">
-                <div class="w-full self-center px-4 lg:w-1/2">
+                <div class="w-full self-center px-4 lg:w-1/2 animate__animated animate__fadeInLeft">
                     <h1 class="text-primary lg:text-2xl">Hello everyone 👋, i'm <span
                             class="font-bold block text-2xl mt-1">M Taufik
                             Fadillah</span>
@@ -92,7 +100,7 @@
                         class="bg-primary py-3 px-8 text-white rounded-full hover:shadow-xl hover:opacity-95 transition duration-500 ease-in-out">Contact
                         me :)</a>
                 </div>
-                <div class="w-full self-end px-4 lg:w-1/2">
+                <div class="w-full self-end px-4 lg:w-1/2 animate__animated animate__fadeInRight">
                     <div class="mt-10 relative lg:mt-9 lg:right-0">
                         <img src="img/logo3.png" alt="Laptop"
                             class="max-w-full mx-auto rounded-full hover:drop-shadow-2xl transition duration-200">
@@ -115,7 +123,7 @@
     <section id="about" class="pt-36 pb-32">
         <div class="container">
             <div class="flex flex-wrap">
-                <div class="w-full px-4 mb-10 lg:w-1/2">
+                <div class="w-full px-4 mb-10 lg:w-1/2" data-aos="fade-right">
                     <h4 class="text-primary font-bold text-3xl mb-4">About Me</h4>
                     <p class="text-slate-600 text-justify">"Hey there! My name is M Taufik Fadillah and I'm a student at
                         the State
@@ -136,7 +144,7 @@
                         in touch with me. I'd
                         love to connect and learn from you too!"</p>
                 </div>
-                <div class="w-full px-4 lg:w-1/2">
+                <div class="w-full px-4 lg:w-1/2" data-aos="fade-left">
                     <h3 class="text-slate-800 font-bold text-xl mb-2 lg:mt-12">Let's be friends.</h3>
                     <p class="mb-2 text-slate-600 text-justify">"Let's be friends and share ideas! In the tech and
                         programming world,
@@ -192,8 +200,8 @@
                         </a>
                     </div>
                 </div>
-                <div class="quotes flex mx-auto mt-20 text-justify md:mt-10">
-                    <h4 class="text-xl italic text-center">"Building amazing websites, one pixel at a time."</h4>
+                <div class="quotes flex mx-auto mt-20 text-justify md:mt-10" data-aos="zoom-in">
+                    <h4 class=" text-xl italic text-center">"Building amazing websites, one pixel at a time."</h4>
                 </div>
             </div>
         </div>
@@ -203,7 +211,7 @@
     <!-- Portofolio Section Start -->
     <section id="portfolio" class="pt-32 pb-16 bg-slate-200">
         <div class="container">
-            <div class="w-full px-4">
+            <div class="w-full px-4" data-aos="fade-down">
                 <div class="max-w-xl mx-auto text-center mb-16">
                     <h4 class="font-semibold text-lg text-primary mb-2">Portfolio</h4>
                     <h2 class="font-bold text-slate-900 text-3xl mb-4 md:text-4xl lg:text-5xl">My Project</h2>
@@ -214,7 +222,7 @@
             </div>
 
             <div class="w-full px-4 flex flex-wrap justify-center">
-                <div class="mb-12 p-4 md:w-1/2">
+                <div class="mb-12 p-4 md:w-1/2" data-aos="fade-up-right">
                     <div class="rounded-md shadow-md overflow-hidden">
                         <img src="img/3.jpg" alt="" width="w-full">
                     </div>
@@ -222,7 +230,7 @@
                     <p class="text-base text-slate-600 mb-5">Lorem ipsum dolor sit amet consectetur
                         adipisicing elit. Aperiam expedita cumque numquam quibusdam delectus mollitia.</p>
                 </div>
-                <div class="mb-12 p-4 md:w-1/2">
+                <div class="mb-12 p-4 md:w-1/2" data-aos="fade-up-left">
                     <div class="rounded-md shadow-md overflow-hidden">
                         <img src="img/4.jpg" alt="" width="w-full">
                     </div>
@@ -230,7 +238,7 @@
                     <p class="text-base text-slate-600 mb-5">Lorem ipsum dolor sit amet consectetur
                         adipisicing elit. Aperiam expedita cumque numquam quibusdam delectus mollitia.</p>
                 </div>
-                <div class="mb-12 p-4 md:w-1/2">
+                <div class="mb-12 p-4 md:w-1/2" data-aos="fade-up-right">
                     <div class="rounded-md shadow-md overflow-hidden">
                         <img src="img/5.jpg" alt="" width="w-full">
                     </div>
@@ -238,7 +246,7 @@
                     <p class="text-base text-slate-600 mb-5">Lorem ipsum dolor sit amet consectetur
                         adipisicing elit. Aperiam expedita cumque numquam quibusdam delectus mollitia.</p>
                 </div>
-                <div class="mb-12 p-4 md:w-1/2">
+                <div class="mb-12 p-4 md:w-1/2" data-aos="fade-up-left">
                     <div class="rounded-md shadow-md overflow-hidden">
                         <img src="img/6.jpg" alt="" width="w-full">
                     </div>
@@ -255,7 +263,7 @@
     <section id="client" class="pt-36 pb-16 bg-slate-800">
         <div class="container">
             <div class="w-full px-4">
-                <div class="mx-auto text-center mb-16">
+                <div class="mx-auto text-center mb-16" data-aos="zoom-in-up">
                     <h4 class="font-semibold text-xl text-slate-200 mb-2">Clients</h4>
                     <h2 class="font-bold text-white text-3xl mb-4 md:text-4xl lg:text-5xl">My Partner</h2>
                     <p class="font-base text-md text-slate-400">
@@ -266,7 +274,7 @@
                 </div>
             </div>
 
-            <div class="w-full px-4">
+            <div class="w-full px-4" data-aos="zoom-in-down">
                 <div class="flex flex-wrap items-center justify-center">
                     <a href="#"
                         class="max-w-[120px] mx-4 my-6 grayscale opacity-800 lg:max-w-[150px] lg:mx-6 xl:mx-8 hover:grayscale-0 hover:opacity-100 transition duration-200">
@@ -309,7 +317,7 @@
     <!-- Blog Section Start -->
     <section id="blog" class="pt-36 pb-16 bg-slate-100">
         <div class="container">
-            <div class="w-full px-4">
+            <div class="w-full px-4" data-aos="zoom-out">
                 <div class="max-w-xl mx-auto text-center mb-16">
                     <h4 class="font-semibold text-lg text-primary mb-2">Blog</h4>
                     <h2 class="font-bold text-slate-900 text-3xl mb-4 md:text-4xl lg:text-5xl">Latest Article</h2>
@@ -320,7 +328,7 @@
                 </div>
             </div>
             <div class="flex flex-wrap justify-center">
-                <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
+                <div class="w-full px-4 lg:w-1/2 xl:w-1/3" data-aos="zoom-out-up">
                     <div class="bg-white shadow-lg rounded-xl overflow-hidden mb-10">
                         <img src="https://source.unsplash.com/500x300?programming" alt="programming" class="w-full">
                         <div class="py-8 px-5">
@@ -337,7 +345,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
+                <div class="w-full px-4 lg:w-1/2 xl:w-1/3" data-aos="zoom-out-down">
                     <div class="bg-white shadow-lg rounded-xl overflow-hidden mb-10">
                         <img src="https://source.unsplash.com/500x300?trading" alt="programming" class="w-full">
                         <div class="py-8 px-5">
@@ -353,7 +361,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
+                <div class="w-full px-4 lg:w-1/2 xl:w-1/3" data-aos="zoom-out-right">
                     <div class="bg-white shadow-lg rounded-xl overflow-hidden mb-10">
                         <img src="https://source.unsplash.com/500x300?coffe" alt="programming" class="w-full">
                         <div class="py-8 px-5">
@@ -377,7 +385,7 @@
     <!-- Contact Section Start -->
     <section id="contact" class="pt-36 pb-16">
         <div class="container">
-            <div class="w-full px-4">
+            <div class="w-full px-4" data-aos="zoom-out-left">
                 <div class="max-w-xl mx-auto text-center mb-16">
                     <h4 class="font-semibold text-lg text-primary mb-2">Relation</h4>
                     <h2 class="font-bold text-slate-900 text-3xl mb-4 md:text-4xl lg:text-5xl">Contact us</h2>
@@ -388,7 +396,7 @@
                 </div>
             </div>
 
-            <form action="#">
+            <form action="#" data-aos="fade-right">
                 <div class="w-full lg:w-2/3 lg:mx-auto">
                     <div class="w-full px-4 mb-8">
                         <label for="name" class="text-base text-primary font-bold">Name</label>
@@ -418,7 +426,7 @@
     <!-- Contact Section End -->
 
     <!-- Footer Start -->
-    <footer class="bg-primary pt-24 pb-12">
+    <footer class="bg-primary pt-24 pb-12" data-aos="fade-right">
         <div class="container">
             <div class="flex flex-wrap">
                 <div class="w-full px-4 mb-12 text-slate-200 font-medium md:w-1/3">
@@ -531,6 +539,10 @@
     <!-- Footer End -->
 
     <script src="dist/js/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
